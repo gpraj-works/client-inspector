@@ -12,9 +12,11 @@
             "@/*": ["src/*"]
         },
         "resolveJsonModule": true,
-        "sourceMap": true,
+        "sourceMap": false,
+        "declaration": true,
         "strict": true,
-        "target": "ESNext"
+        "target": "ESNext",
+        "removeComments": true
     },
     "exclude": ["node_modules", "dist"],
     "include": ["src/**/*.ts", "tests/**/*.test.ts"]

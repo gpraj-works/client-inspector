@@ -1,16 +1,18 @@
-import { defineConfig } from 'tsup';
+import { defineConfig } from 'tsup'
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === 'production'
 
 export default defineConfig(({ watch = false }) => ({
-    clean: true,
-    dts: true,
+    clean: true,  // Remove old builds
+    dts: true,    // Generate TypeScript declaration files
     entry: {
         index: 'src/index.ts',
     },
-    external: [],
-    format: ['cjs', 'esm'],
-    minify: isProduction,
-    sourcemap: isProduction,
+    external: [],  // Add dependencies here if you want them to be externalized
+    format: ['cjs', 'esm'],  // CommonJS and ES Modules
+    minify: isProduction,  // Minify for production builds
+    sourcemap: false,  // Disable source maps for a smaller package
+    treeshake: true,  // Remove unused code
+    splitting: true,  // Enable code splitting
     watch,
-}));
+}))
