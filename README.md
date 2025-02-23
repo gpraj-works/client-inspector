@@ -1,7 +1,7 @@
 # Client Inspector
 
 [![npm version](https://img.shields.io/npm/v/client-inspector)](https://www.npmjs.com/package/client-inspector)
-[![License](https://img.shields.io/npm/l/client-inspector)](https://github.com/gpraj-works/client-inspector/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/gpraj-works/client-inspector)](https://github.com/gpraj-works/client-inspector/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/gpraj-works/client-inspector?style=social)](https://github.com/gpraj-works/client-inspector)
 
 **Client Inspector** is a lightweight TypeScript library that helps fetch and analyze client-side information such as browser details, operating system, and device specifications. It works seamlessly with React, Angular, Vue, and plain JavaScript/HTML environments.
